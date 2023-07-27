@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/lorem/</loc>
+    <loc>https://www.jojowaragi.com/tags/lorem/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://www.jojowaragi.com/tags/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/language-perfect/</loc>
+    <loc>https://www.jojowaragi.com/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/writing/</loc>
+    <loc>https://www.jojowaragi.com/posts/language-perfect/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://www.jojowaragi.com/tags/writing/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://www.jojowaragi.com/posts/</loc>
     <lastmod>2019-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/sanity-not-statistical/</loc>
+    <loc>https://www.jojowaragi.com/posts/sanity-not-statistical/</loc>
     <lastmod>2018-12-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/destruction-of-words/</loc>
+    <loc>https://www.jojowaragi.com/posts/destruction-of-words/</loc>
     <lastmod>2018-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/time/</loc>
+    <loc>https://www.jojowaragi.com/tags/time/</loc>
     <lastmod>2018-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/controls-the-past/</loc>
+    <loc>https://www.jojowaragi.com/posts/controls-the-past/</loc>
     <lastmod>2018-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/pages/about/</loc>
+    <loc>https://www.jojowaragi.com/pages/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://www.jojowaragi.com/categories/</loc>
   </url><url>
-    <loc>/pages/</loc>
+    <loc>https://www.jojowaragi.com/pages/</loc>
   </url>
 </urlset>
