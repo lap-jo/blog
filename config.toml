@@ -1,4 +1,4 @@
-baseURL = "https://www.jojowaragi.com/"
+baseURL = "https://lapjo.com/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
@@ -23,14 +23,14 @@ pygmentsUseClasses = true
   usePaginationOnHomepage = false
   limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
-  addDot = true
+  # addDot = true
   addFrame = true
-  highlightColor = '#458588'
-  baseColor = "#ffffff"
+  highlightColor = '#7fcc28'
+  baseColor = "#232323"
   baseOffsetColor = "#ebdbb2"
-  headingColor = "#1d2021"
-  textColor = "#3c383c"
-  dotColor = "#458588"
+  headingColor = "#fabd27"
+  textColor = "#f0f0f0"
+  dotColor = "#fe8019"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.bunny.net/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
@@ -44,6 +44,20 @@ pygmentsUseClasses = true
       hardWraps = false
       unsafe = true
       xhtml = false
+    [markup.highlight]
+      anchorLineNos = false
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ''
+      hl_inline = false
+      lineAnchors = ''
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = true
+      noClasses = true
+      noHl = false
+      style = 'gruvbox'
+
 
 [menu]
   [[menu.main]]
