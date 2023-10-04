@@ -3,20 +3,14 @@ title: 'About'
 #image: images/writer.jpeg
 ---
 
-# I'm am lapjo & this is my personal site
-I am a managing director at [Jojo Waragi](https://jojowaragi.com). The contents
-of this site though are not in affiliation with my employer even if I will be 
-writing about them here.
+# A writer on different topics
 
-I have a passion for distilling spirits but also simply blending spirits & 
-different essential oils to produce great tasting moonshines.
+I'm a son of two and employer of one.
 
-I will be writing about some of these explorations here. I also love the 
-opensource space, hence I will be writing about software for linux and other 
-opensource one's.
+I like explore the open source space and test the different interesting applications
+one could use. A lot of them extremely useful & practical and others simply fun 
+and interesting.
 
-This same sight will act as a brain-dump of sort for ideas I have. feel free to 
-contribute (although it's possible that by the time you read this I won't have
-set up the disqus serve)
-
+I'm also a hobbyist moonshiner with 4 years of random blends and experiments, a 
+Coen Brothers fanatic, and a football (soccer) lunatic.
 
