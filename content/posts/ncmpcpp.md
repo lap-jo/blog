@@ -57,12 +57,12 @@ and then run ncmpcpp with
     below file path \
     <span style="color:yellow"> <b> ~/home/usr/.config/mpd/mpd.conf </b> </span>
  - you can copy the default configuration from with the command
-  ```bash $ cp
-   $ /etc/mpd/mpd.conf $HOME/.config/mpd/mpd.conf
+  ```bash
+  $ cp /etc/mpd/mpd.conf $HOME/.config/mpd/mpd.conf
    ```
    OR
-   ```bash $ cp
-   $ /etc/mpd/mpd.conf $HOME/.mpd/mpd.conf
+   ```bash
+   $ cp /etc/mpd/mpd.conf $HOME/.mpd/mpd.conf
    ```
     
  - the configurations are in plain-text making it extremely easy to understand
