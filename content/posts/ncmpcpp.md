@@ -1,5 +1,5 @@
 ---
-title: "Ncmpcpp"
+title: "configuring ncmpcpp and mpd"
 date: 2023-08-05T20:00:20+03:00
 description: 'ncmpcpp, a terminal based music player for mpd'
 tags: "cli-based software,"
