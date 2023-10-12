@@ -19,7 +19,7 @@ pygmentsUseClasses = true
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showIntroContentOnHomepage = true
-  showPostsOnHomepage = false
+  showPostsOnHomepage = true
   usePaginationOnHomepage = false
   limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
   sortPostsByDateOldestFirst = false
@@ -43,10 +43,10 @@ pygmentsUseClasses = true
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true
-      xhtml = false
+      xhtml = true
     [markup.highlight]
       anchorLineNos = false
-      codeFences = false
+      codeFences = true
       guessSyntax = true
       hl_Lines = ''
       hl_inline = false
@@ -56,7 +56,7 @@ pygmentsUseClasses = true
       lineNumbersInTable = true
       noClasses = true
       noHl = false
-      style = 'gruvbox'
+      style = 'dracula'
 
 
 [menu]
