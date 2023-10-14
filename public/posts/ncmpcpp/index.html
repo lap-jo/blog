@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>how to configure &amp; install ncmpcpp on linux - Lapjo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://lapjo.com/favicon.png">
+  <link rel="canonical" href="https://lapjo.com/posts/ncmpcpp/" />
+    
+    
+    <link rel="stylesheet" href="/css/style.min.37e543f16cfd26df65e94cd528f90768e5b7981fa5ba8466b70b44985b2e8ee6.css">
+    <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
+
+  
+    <meta name="description" content="ncmpcpp is a terminal based music player, this is a guide showing how to configure ncmpcpp"/>
+    <meta property="og:title" content="how to configure &amp; install ncmpcpp on linux"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://lapjo.com/posts/ncmpcpp/"/>
+    <meta property="og:image" content="https://lapjo.com/images/ncmpcpp"/>
+    <meta property="og:description" content="ncmpcpp is a terminal based music player, this is a guide showing how to configure ncmpcpp"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@okelloj3"/>
+    <meta name="twitter:creator" content="@okelloj3"/>
+  
+
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+  
+
+  
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="https://lapjo.com/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-blog">
+                    <a href="https://lapjo.com/posts/">Blog</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="https://lapjo.com/pages/about/">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-tags">
+                    <a href="https://lapjo.com/tags/">Tags</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Lapjo</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home ">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-blog ">
+        <a href="/posts/">
+          
+          <span>Blog</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/pages/about/">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-tags ">
+        <a href="/tags/">
+          
+          <span>Tags</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+716 words 4 minutes
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>how to configure &amp; install ncmpcpp on linux</h1>
+      
+      <img alt="Article hero image" src="/images/ncmpcpp" />
+      
+    </div>
+    <div class="content">
+      <h1 id="introduction">Introduction</h1>
+<ul>
+<li>ncmpcpp is a frontend for Music Player Daemon (MPD). MPD is a music player
+server that plays and organises audio files, playlists, etc.</li>
+<li>to interact (in a user friendly manner) with MPD we need a client application
+and ncmpcpp is one of these application.</li>
+<li>ncmpcpp is a fork of ncmpc that comes with many more features including but not
+limited to visualizer, tag editor, playlist editor, lyrics display and download.</li>
+<li>ncmpcpp is a terminal based application</li>
+</ul>
+<h2 id="how-to-install-ncmpcpp">how to install ncmpcpp</h2>
+<ul>
+<li>ncmpcpp is available on most linux distribution repositories. In my case I use
+<strong>Fedora Linux</strong> so I use the following command;</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf5 install mpd ncmpcpp
+</span></span></code></pre></div><p>for Debian-based &lsquo;ubuntu, linux mint, etc&rsquo; distros;</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install mpd ncmpcpp
+</span></span></code></pre></div><h2 id="configuring-mpd">configuring MPD</h2>
+<ul>
+<li>we will create a configuration file in <strong>.config/mpd/mpd.conf</strong>, this file
+will override the default system-wide configuration.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch .config/mpd/mpd.conf
+</span></span></code></pre></div><ul>
+<li>you can also use <strong>.mpd/mpd.conf</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>touch .mpd/mpd.conf
+</span></span></code></pre></div><p>here is my configuration file;</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">1</span>   | music_directory     <span style="color:#0ff;font-weight:bold">&#34;/home/user/Music&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">2</span>   │ playlist_directory  <span style="color:#0ff;font-weight:bold">&#34;/home/user/.config/mpd/playlists&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">3</span>   │ 
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">4</span>   │ auto_update <span style="color:#0ff;font-weight:bold">&#34;yes&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">5</span>   │ bind_to_address <span style="color:#0ff;font-weight:bold">&#34;127.0.0.1&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">6</span>   │ restore_paused <span style="color:#0ff;font-weight:bold">&#34;yes&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">7</span>   │ max_output_buffer_size <span style="color:#0ff;font-weight:bold">&#34;16384&#34;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">8</span>   │ 
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">9</span>   │ audio_output {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">10</span>   │     <span style="color:#fff;font-weight:bold">type</span> <span style="color:#0ff;font-weight:bold">&#34;pulse&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">11</span>   │     name <span style="color:#0ff;font-weight:bold">&#34;pulse&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">12</span>   │     <span style="color:#007f7f">#type  &#34;alsa&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">13</span>   │     <span style="color:#007f7f">#name  &#34;ALSA&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">14</span>   │ }
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">15</span>   │ 
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">16</span>   │ audio_output {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">17</span>   │        <span style="color:#fff;font-weight:bold">type</span> <span style="color:#0ff;font-weight:bold">&#34;fifo&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">18</span>   │        name <span style="color:#0ff;font-weight:bold">&#34;Visualizer feed&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">19</span>   │        path <span style="color:#0ff;font-weight:bold">&#34;/tmp/mpd.fifo&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">20</span>   │        format   <span style="color:#0ff;font-weight:bold">&#34;44100:16:2&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">21</span>   │ }
+</span></span></code></pre></div><p>Replace <em><strong>user</strong></em> with your username</p>
+<p>In the <strong>audio_output</strong> option I have set <em>type</em> and <em>name</em> to pulse because I am
+using pulseaudio as my output source. you can switch to alsa instead.</p>
+<hr>
+<p><strong>NOTE:</strong> There are many more options than this &amp; you can explore them in <strong>/etc/mpd.conf</strong> <br>
+You will also find explanations for each option in the same file.
+<strong>DO NOT MAKE DIRECT CHANGES TO THIS FILE UNLESS YOU KNOW WHAT YOU ARE DOING</strong></p>
+<hr>
+<h2 id="configuring-ncmpcpp">configuring ncmpcpp</h2>
+<ul>
+<li>we will create a configuration file in <strong>.config/ncmpcpp/config</strong>, this file</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vim .config/ncmpcpp/config
+</span></span></code></pre></div><ul>
+<li>now we add the configuration content</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">1</span>   │ ncmpcpp_directory = ~/.config/ncmpcpp
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">2</span>   │ lyrics_directory = ~/.lyrics
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">3</span>   │ mpd_music_dir = ~/Music
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">4</span>   │ mpd_crossfade_time = <span style="color:#ff0;font-weight:bold">12</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">5</span>   │ visualizer_look = ^|
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">6</span>   │ visualizer_spectrum_smooth_look = no 
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">7</span>   │ execute_on_song_change = herbe <span style="color:#0ff;font-weight:bold">&#34;Now Playing&#34;</span> <span style="color:#0ff;font-weight:bold">&#34;</span><span style="color:#fff;font-weight:bold">$(</span>mpc --format <span style="color:#0ff;font-weight:bold">&#39;%title% \n%artist% - %album%&#39;</span> current<span style="color:#fff;font-weight:bold">)</span><span style="color:#0ff;font-weight:bold">&#34;</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">8</span>   │ playlist_display_mode = columns
+</span></span><span style="display:flex;"><span>   <span style="color:#ff0;font-weight:bold">9</span>   │ browser_display_mode = columns
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">10</span>   │ search_engine_display_mode = columns
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">11</span>   │ playlist_editor_display_mode = columns
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">12</span>   │ progressbar_look = **
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">13</span>   │ user_interface = alternative
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">14</span>   │ media_library_albums_split_by_date = no
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">15</span>   │ statusbar_visibility = no
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">16</span>   │ connected_message_on_startup = no
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">17</span>   │ lyrics_fetchers = musixmatch, genius, azlyrics
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">18</span>   │ fetch_lyrics_for_current_song_in_background = yes
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">19</span>   │ store_lyrics_in_song_dir = no 
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">20</span>   │ screen_switcher_mode = playlist, browser, lyrics
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">21</span>   │ startup_screen = playlist
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">22</span>   │ jump_to_now_playing_song_at_start = yes
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">23</span>   │ display_bitrate = yes
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">24</span>   │ external_editor = nvim
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">25</span>   │ header_window_color = default
+</span></span><span style="display:flex;"><span>  <span style="color:#ff0;font-weight:bold">26</span>   │ color2 = green
+</span></span></code></pre></div><hr>
+<p><strong>NOTE:</strong> for <em>execute_on_song_change</em> you will need to download herbe</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf5 install herbe
+</span></span></code></pre></div><hr>
+<h2 id="startup">Startup</h2>
+<p>First we start mpd</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mpd
+</span></span></code></pre></div><p>Then we start ncmpcpp</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ncmpcpp
+</span></span></code></pre></div><h2 id="lets-explore-ncmpcpp">Lets explore ncmpcpp</h2>
+<h3 id="this-is-the-playlist-screen">this is the playlist screen</h3>
+<figure>
+<img src="/images/ncmpcpp_current_playlist" width="cover" alt="ncmpcpp playlist screen">
+<figcation>Fig.1 - ncmpcpp playlist view</figcation>
+</figure>
+<p>On startup of ncmcpp you will be greeted by the current playlist display. To navigate
+here from other areas use Press <strong>1</strong></p>
+<p>Press <strong>u</strong> to update the database so your audio files are visible to ncmpcpp</p>
+<h3 id="media-library">media library</h3>
+<figure>
+<img src="/images/ncmpcpp_media_lib" width="cover" alt="ncmpcpp playlist screen">
+<figcation>Fig.2 - ncmpcpp media library</figcation>
+</figure>
+<p>This is the ncmpcpp media library. Press <strong>4</strong> to navigate to this screen.
+As you can see in Fig.2 the Albums are sorted by artist, to sort by date press
+<strong>4</strong> again</p>
+<h3 id="lyrics-view">lyrics view</h3>
+<figure>
+<img src="/images/ncmpcpp_lyrics" width="cover" alt="ncmpcpp playlist screen">
+<figcation>Fig.2.1 - ncmpcpp lyrics view with lyrics to MF DOOM's "Korn Karne"</figcation>
+</figure>
+<p>One of the features of ncmpcpp is the ability to download and view lyrics. To switch
+to this view press <strong>l</strong> with the selection on the song whose lyrics you want to
+view.</p>
+<p>You press <strong>F</strong> to toggle fetching lyrics on song change.</p>
+<h3 id="visualizer">visualizer</h3>
+<figure>
+<img src="/images/ncmpcpp_visualizer" width="cover" alt="ncmpcpp playlist screen">
+<figcation>Fig.2.2 - ncmpcpp visualizer</figcation>
+</figure>
+<p>Ncmpcpp comes with a visualizer which can be access by pressing <strong>8</strong>. We can configure
+its look in the ncmpcpp config.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>There it is that is enough to get you started with ncmpcpp. For more ricing options
+you can visit forums such as r/unixporn on reddit, search for ncmpcpp dotfiles
+off of github and gitlab.</p>
+<p>For a comprehensive list of keybindings visit <a href="%22https://pkgbuild.com/~jelle/ncmpcpp/%22">ncmpcpp cheatsheet</a></p>
+<p>For more configuration options see the ncmpcpp man pages with</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man ncmpcpp
+</span></span></code></pre></div>
+    </div>
+    below</p>
+    <a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Bree&outline_colour=000000&coffee_colour=ffffff" /></a>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/okelloj3" title="twitter" target="_blank" rel="noopener">
+          <img src="/images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+    <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBMEKXV6WC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-GBMEKXV6WC');
+      </script>
+    
+  
+
+
+  
+
+  
+
+</body>
+</html>

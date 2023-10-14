@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The musings of a complex and introspective individual on Lapjo</title>
-    <link>https://www.jojowaragi.com/</link>
-    <description>Recent content in The musings of a complex and introspective individual on Lapjo</description>
+    <title>Moonshine, and opensource. on Lapjo</title>
+    <link>https://lapjo.com/</link>
+    <description>Recent content in Moonshine, and opensource. on Lapjo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jojowaragi.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 20:00:20 +0300</lastBuildDate><atom:link href="https://lapjo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>how to configure &amp; install ncmpcpp on linux</title>
+      <link>https://lapjo.com/posts/ncmpcpp/</link>
+      <pubDate>Sat, 05 Aug 2023 20:00:20 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/ncmpcpp/</guid>
+      <description>Introduction ncmpcpp is a frontend for Music Player Daemon (MPD). MPD is a music player server that plays and organises audio files, playlists, etc. to interact (in a user friendly manner) with MPD we need a client application and ncmpcpp is one of these application. ncmpcpp is a fork of ncmpc that comes with many more features including but not limited to visualizer, tag editor, playlist editor, lyrics display and download.</description>
+    </item>
+    
     <item>
       <title>About</title>
-      <link>https://www.jojowaragi.com/pages/about/</link>
+      <link>https://lapjo.com/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jojowaragi.com/pages/about/</guid>
-      <description>This is my personal site and blog.
-I am a web developer and linux enthusiast.
-var add2 = function(number) { return number + 2; } I&amp;rsquo;m new to this writing thing so the direction will be clear in the coming weeks &amp;amp; months but expect content regarding opensource-mainly linux tools, tech related news, soccer, and some brain dumps.</description>
+      <guid>https://lapjo.com/pages/about/</guid>
+      <description>A writer on different topics I&amp;rsquo;m a son of two and employer of one.
+I like explore the open source space and test the different interesting applications one could use. A lot of them extremely useful &amp;amp; practical and others simply fun and interesting.
+I&amp;rsquo;m also a hobbyist moonshiner with 4 years of random blends and experiments, a Coen Brothers fanatic, and a football (soccer) lunatic.</description>
     </item>
     
   </channel>

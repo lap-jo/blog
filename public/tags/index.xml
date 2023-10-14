@@ -2,9 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Lapjo</title>
-    <link>https://www.jojowaragi.com/tags/</link>
+    <link>https://lapjo.com/tags/</link>
     <description>Recent content in Tags on Lapjo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.jojowaragi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2023 20:00:20 +0300</lastBuildDate><atom:link href="https://lapjo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>music</title>
+      <link>https://lapjo.com/tags/music/</link>
+      <pubDate>Sat, 05 Aug 2023 20:00:20 +0300</pubDate>
+      
+      <guid>https://lapjo.com/tags/music/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
