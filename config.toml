@@ -13,6 +13,8 @@ pygmentsUseClasses = false
     extended = true
     min = "0.55.0"
 
+enableRobotsTXT = true
+
 [params]
   google_analytics_id = "G-GBMEKXV6WC"
   twitter_handle = "@okelloj3"
