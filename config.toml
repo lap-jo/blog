@@ -60,6 +60,8 @@ enableRobotsTXT = true
       noHl = false
       style = 'gruvbox dark'
 
+disqusShortname = 'lapjo-com'
+
 [sitemap]
   changeFreq = 'hourly'
   filename = 'sitemap.xml'
