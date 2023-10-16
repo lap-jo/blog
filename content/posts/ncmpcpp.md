@@ -1,4 +1,7 @@
 ---
+sitemap:
+    changefreq: hourly
+    priority: 0.8
 title: "how to configure & install ncmpcpp on linux"
 date: 2023-08-05T20:00:20+03:00
 description: 'ncmpcpp is a terminal based music player, this is a guide showing how to configure ncmpcpp'

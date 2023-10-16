@@ -59,9 +59,9 @@ pygmentsUseClasses = false
       style = 'gruvbox dark'
 
 [sitemap]
-  changeFreq = ''
+  changeFreq = 'hourly'
   filename = 'sitemap.xml'
-  priority = -1
+  priority = 0.0
 
 [menu]
   [[menu.main]]
