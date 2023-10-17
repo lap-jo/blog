@@ -187,3 +187,8 @@ For more configuration options see the ncmpcpp man pages with
 ```bash
 man ncmpcpp
 ```
+
+If you find the content helpful then please consider showing your support by clicking the button below
+<a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+
+Or message me on twitter with the link at the bottom of this page
