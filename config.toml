@@ -16,6 +16,7 @@ pygmentsUseClasses = false
 enableRobotsTXT = true
 
 [params]
+  disqusShortname = 'lapjo-com'
   google_analytics_id = "G-GBMEKXV6WC"
   twitter_handle = "@okelloj3"
   showAuthorOnHomepage = false
@@ -60,7 +61,7 @@ enableRobotsTXT = true
       noHl = false
       style = 'gruvbox dark'
 
-disqusShortname = 'lapjo-com'
+
 
 [sitemap]
   changeFreq = 'hourly'
