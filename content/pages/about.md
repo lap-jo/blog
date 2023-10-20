@@ -3,14 +3,10 @@ title: 'About'
 #image: images/writer.jpeg
 ---
 
-# A writer on different topics
+# Opensource programs and news
+Articles on linux and opensource. Including tutorials, reviews, how tos, among
+others.
 
-I'm a son of two and employer of one.
+Will also post links to my dotfiles & some projects here.
 
-I like explore the open source space and test the different interesting applications
-one could use. A lot of them extremely useful & practical and others simply fun 
-and interesting.
-
-I'm also a hobbyist moonshiner with 4 years of random blends and experiments, a 
-Coen Brothers fanatic, and a football (soccer) lunatic.
-
+I hope you find my articles useful.

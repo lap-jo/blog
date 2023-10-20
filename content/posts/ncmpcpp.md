@@ -6,7 +6,7 @@ title: "how to configure & install ncmpcpp on linux"
 date: 2023-08-05T20:00:20+03:00
 description: 'ncmpcpp is a terminal based music player, this is a guide showing how to configure ncmpcpp'
 tags: "music"
-image: images/ncmpcpp
+image: images/ncmpcpp.webp
 draft: false
 ---
 
@@ -133,7 +133,7 @@ ncmpcpp
 ## Lets explore ncmpcpp
 ### this is the playlist screen
 <figure>
-<img src="/images/ncmpcpp_current_playlist" width="cover" alt="ncmpcpp playlist screen">
+<img src="/images/ncmpcpp_current_playlist.webp" width="cover" alt="ncmpcpp playlist screen">
 <figcation>Fig.1 - ncmpcpp playlist view</figcation>
 </figure>
 
@@ -144,7 +144,7 @@ Press **u** to update the database so your audio files are visible to ncmpcpp
 
 ### media library
 <figure>
-<img src="/images/ncmpcpp_media_lib" width="cover" alt="ncmpcpp playlist screen">
+<img src="/images/ncmpcpp_media_lib.webp" width="cover" alt="ncmpcpp playlist screen">
 <figcation>Fig.2 - ncmpcpp media library</figcation>
 </figure>
 
@@ -154,7 +154,7 @@ As you can see in Fig.2 the Albums are sorted by artist, to sort by date press
 
 ### lyrics view
 <figure>
-<img src="/images/ncmpcpp_lyrics" width="cover" alt="ncmpcpp playlist screen">
+<img src="/images/ncmpcpp_lyrics.webp" width="cover" alt="ncmpcpp playlist screen">
 <figcation>Fig.2.1 - ncmpcpp lyrics view with lyrics to MF DOOM's "Korn Karne"</figcation>
 </figure>
 
@@ -167,7 +167,7 @@ You press **F** to toggle fetching lyrics on song change.
 
 ### visualizer
 <figure>
-<img src="/images/ncmpcpp_visualizer" width="cover" alt="ncmpcpp playlist screen">
+<img src="/images/ncmpcpp_visualizer.webp" width="cover" alt="ncmpcpp playlist screen">
 <figcation>Fig.2.2 - ncmpcpp visualizer</figcation>
 </figure>
 
@@ -187,8 +187,13 @@ For more configuration options see the ncmpcpp man pages with
 ```bash
 man ncmpcpp
 ```
+if you found the content of this page helpful please consider supporting us via the button below <br>
+<a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /> </a> <br>
+Or you can message me directly with any of the links below
 
-If you find the content helpful then please consider showing your support by clicking the button below
-<a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 
-Or message me on twitter with the link at the bottom of this page
+<div class="comments" style="width: 100%;">
+<script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div id="commento"></div>
+
+</div>

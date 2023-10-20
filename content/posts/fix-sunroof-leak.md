@@ -19,5 +19,9 @@ most likely cause for why your car floor is wet, how to fix it and how to preven
 it from happening in the future
 
 ## The point
-k
 
+
+<br>
+if you found the content of this page helpful please consider supporting us via the button below <br>
+<a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /> </a> <br>
+Or you can message me directly with any of the links below
