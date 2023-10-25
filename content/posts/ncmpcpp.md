@@ -4,7 +4,7 @@ sitemap:
     priority: 0.8
 title: "how to configure & install ncmpcpp on linux"
 date: 2023-08-05T20:00:20+03:00
-description: 'ncmpcpp is a terminal based music player, this is a guide showing how to configure ncmpcpp'
+description: 'ncmpcpp is a terminal based music player, how to install ncmpcpp, how to install ncmpcpp, ncmpcpp on linux, the best audio player on linux, download lyrics on linux, visualizer with ncmpcpp'
 tags: "music"
 image: images/ncmpcpp.webp
 draft: false
@@ -19,7 +19,7 @@ and ncmpcpp is one of these application.
 limited to visualizer, tag editor, playlist editor, lyrics display and download.
 - ncmpcpp is a terminal based application
 
-## how to install ncmpcpp
+## Install ncmpcpp & Mpd
 - ncmpcpp is available on most linux distribution repositories. In my case I use
 **Fedora Linux** so I use the following command;
 ```bash
@@ -161,6 +161,8 @@ As you can see in Fig.2 the Albums are sorted by artist, to sort by date press
 One of the features of ncmpcpp is the ability to download and view lyrics. To switch
 to this view press **l** with the selection on the song whose lyrics you want to 
 view.
+
+Come to think of it ncmpcpp may be the best way to get lyrics for any song on linux.
 
 You press **F** to toggle fetching lyrics on song change.
 
