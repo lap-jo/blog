@@ -2,9 +2,9 @@
 sitemap:
     changefreq: hourly
     priority: 0.8
-title: "how to configure & install ncmpcpp on linux"
+title: "the ultimate ncmpcpp config, for the best cli-based music player"
 date: 2023-08-05T20:00:20+03:00
-description: 'how to install and configure ncmpcpp - a featureful music player in the linux terminal '
+description: 'find out the use of ncmpcpp, how to configure ncmpcpp and wow your friends with this built in visualizer without cava'
 tags: "music"
 image: images/ncmpcpp.webp
 draft: false
