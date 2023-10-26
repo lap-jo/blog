@@ -1,5 +1,6 @@
 ---
 title: 'About'
+description: 'linux how tos, tutorials, product reviews, opensource news, tech pioneer feature articles'
 #image: images/writer.jpeg
 ---
 

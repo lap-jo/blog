@@ -1,6 +1,6 @@
 ---
-title: Moonshine, and opensource.
-description: linux, opensource, among other things
+title: Tech and opensource for you.
+description: all things linux and opensource.
 ---
 
 

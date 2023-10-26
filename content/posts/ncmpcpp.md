@@ -4,7 +4,7 @@ sitemap:
     priority: 0.8
 title: "how to configure & install ncmpcpp on linux"
 date: 2023-08-05T20:00:20+03:00
-description: 'ncmpcpp is a terminal based music player, how to install ncmpcpp, how to install ncmpcpp, ncmpcpp on linux, the best audio player on linux, download lyrics on linux, visualizer with ncmpcpp'
+description: 'how to install and configure ncmpcpp - a featureful music player in the linux terminal '
 tags: "music"
 image: images/ncmpcpp.webp
 draft: false
