@@ -37,6 +37,13 @@ sudo apt-get update
 sudo apt-get install ranger
 ```
 
-### using ranger
-After installing ranger, run the below command to start it up
+### Features
+ranger supports a multitude of very important features which are not just cool
+but very important.
+**bulk rename** this is the first feature I look for in any file manager. I just 
+cannot be understated how convinient and time saving the ability to rename 
 
+### configurations
+- ranger loads it's configurations from /home/user/.config/ranger/rc.conf
+- the file manager is highly customizable with the ability to change multiple 
+  things like keybindings, colorschemes, layouts, etc

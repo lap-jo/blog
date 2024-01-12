@@ -45,6 +45,3 @@ sudo systemctl restart systemd-logind.service
 - switch to one of your tty with *Ctrl-Alt-F3* for tty3
 - restart gdm.service from the tty3
 - switch to the default tty1 and you should be able to login normally
- 
-This article may be updated for non-systemd systems in the future but for now you
-will have to live with this
