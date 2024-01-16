@@ -8,7 +8,39 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lapjo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>how to configure &amp; install ncmpcpp on linux</title>
+      <title>Lost Memories</title>
+      <link>https://lapjo.com/posts/lost_memories/</link>
+      <pubDate>Tue, 16 Jan 2024 06:19:23 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/lost_memories/</guid>
+      <description>2014, 14 year old me to my brother: remember we used to play space chimp on ps2?. He had no recallection of it whatsoever, infact none of my 3 older brothers remembered ever owning the game.
+I am fairly certain to this day that we infact played it.
+I&amp;rsquo;m sure this hasn&amp;rsquo;t only happened to me. Is there a word for it?, are there publications explaining or atleast trying to explain this.</description>
+    </item>
+    
+    <item>
+      <title>about a youtuber?</title>
+      <link>https://lapjo.com/posts/direction_of_this/</link>
+      <pubDate>Fri, 12 Jan 2024 16:23:40 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/direction_of_this/</guid>
+      <description>I have been watching youtube videos from creator luke smith on youtube and have noticed that he will sometimes randomly not post anything for really long periods -a whole year.
+It is actually quite interesting to me because I only ever notice a long time he actually posting which is not really the same with other creators and it&amp;rsquo;s led to go back and watch some of he&amp;rsquo;s content to understand why and I don&amp;rsquo;t actually understand why till now.</description>
+    </item>
+    
+    <item>
+      <title>Change Lid Close Behaviour On Ubuntu and Fedora</title>
+      <link>https://lapjo.com/posts/change-lid-close-behaviour/</link>
+      <pubDate>Thu, 07 Dec 2023 09:18:09 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/change-lid-close-behaviour/</guid>
+      <description>Default behaviour On most linux distributions the default behaviour is that when you close you laptop lid the computer will suspended all processes inorder to save power.
+This is very useful as it reduces battery usage incase you unknowingly forgot to turn off your computer before a long trip or in any other situation.
+But There are situations where you will want this behaviour changed so that you can tasks running with the lid closed.</description>
+    </item>
+    
+    <item>
+      <title>the ultimate ncmpcpp config, for the best cli-based music player</title>
       <link>https://lapjo.com/posts/ncmpcpp/</link>
       <pubDate>Sat, 05 Aug 2023 20:00:20 +0300</pubDate>
       
