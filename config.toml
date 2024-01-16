@@ -61,7 +61,10 @@ enableRobotsTXT = true
       noHl = false
       style = 'gruvbox dark'
 
-
+[rss]
+rssLimit = 20
+copyright = "2024 lapjo. All rights reserved"
+languageCode = "en-us"
 
 [sitemap]
   changeFreq = 'hourly'
