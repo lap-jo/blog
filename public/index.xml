@@ -6,7 +6,17 @@
     <description>Recent content in Tech and opensource for you. on Lapjo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jan 2024 06:19:23 +0300</lastBuildDate><atom:link href="https://lapjo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jan 2024 16:04:20 +0300</lastBuildDate><atom:link href="https://lapjo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;</title>
+      <link>https://lapjo.com/posts/no-polkit-authentication-agent/</link>
+      <pubDate>Wed, 17 Jan 2024 16:04:20 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/no-polkit-authentication-agent/</guid>
+      <description>So, I recently switched to i3wm and ran into a small issue with running virt-manager from the desktop entry. Turns out, I need root access for it to work. In my previous setup with Fedora GNOME, I would simply get a password prompt with gnome-polkit.
+But here&amp;rsquo;s the thing: polkit-gnome only works with GNOME, so if you&amp;rsquo;re using i3wm, you&amp;rsquo;ll need a different polkit manager. The most popular one for i3wm is lxpolkit.</description>
+    </item>
+    
     <item>
       <title>Lost Memories</title>
       <link>https://lapjo.com/posts/lost_memories/</link>

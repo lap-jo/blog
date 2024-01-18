@@ -4,22 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Tags - Lapjo</title>
+  <title>Fix i3 window manager error &#39;No Polkit Authentication Agent&#39; - Lapjo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="https://lapjo.com/favicon.png">
-  <link rel="canonical" href="https://lapjo.com/tags/" />
+  <link rel="canonical" href="https://lapjo.com/posts/no-polkit-authentication-agent/" />
     
     
     <link rel="stylesheet" href="/css/style.min.6c702d14bde5e93c9617611843b2d0ccb547ac6dfd88455a51e43934c5b16b26.css">
     <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
 
   
-    
-    <meta property="og:title" content="Tags"/>
+    <meta name="description" content="in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
+    <meta property="og:title" content="Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://lapjo.com/tags/"/>
+    <meta property="og:url" content="https://lapjo.com/posts/no-polkit-authentication-agent/"/>
     
-    
+    <meta property="og:description" content="in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@okelloj3"/>
     <meta name="twitter:creator" content="@okelloj3"/>
@@ -36,7 +36,7 @@
 
 
 
-<body class='page frame page-default-list'>
+<body class='page frame page-blog-single'>
   <div id="menu-main-mobile" class="menu-main-mobile">
     <ul class="menu">
         
@@ -103,7 +103,7 @@
       
       
       
-      <li class="menu-item-tags active">
+      <li class="menu-item-tags ">
         <a href="/tags/">
           
           <span>Tags</span>
@@ -117,17 +117,46 @@
   </div>
 </div>
     
-  <div class="intro">
-    <h1>Tags</h1>
+202 words 1 minutes
+  <div class="blog">
     
-  </div>
-  
-  
-    <div class="summary">
-      <h2 class="summary-title"><a href="/tags/music-linux-opensource/">music, linux, opensource<span class="dot">.</span></a></h2>
-      <p class="summary-description"></p>
+      <div class="author">
+  <img width="30" class="author-image" src="/images/author.jpg" alt="Lapjo" />
+  <span class="author-name">Lapjo</span>
+  <span class="author-divider"></span>
+  <span class="author-date">January 17, 2024</span>
+</div>
+    
+    <div class="intro">
+        <p>202 words 1 minutes</p>
+      <h1>Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;</h1>
+      
     </div>
-  
+    <div class="content">
+      <p>So, I recently switched to i3wm and ran into a small issue with running virt-manager
+from the desktop entry. Turns out, I need root access for it to work. In my previous
+setup with Fedora GNOME, I would simply get a password prompt with gnome-polkit.</p>
+<p>But here&rsquo;s the thing: polkit-gnome only works with GNOME, so if you&rsquo;re using i3wm,
+you&rsquo;ll need a different polkit manager. The most popular one for i3wm is lxpolkit.</p>
+<p>To fix the issue, you can easily install lxpolkit from your Linux distribution&rsquo;s
+package manager which in my case is fedora. So I run</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install lxpolkit
+</span></span></code></pre></div><p>Once that&rsquo;s done, just add the following
+line to your i3config:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>exec --no-startup-id lxpolkit
+</span></span></code></pre></div><p>And voila! You&rsquo;re good to go.</p>
+<p>Now, you might wonder why it&rsquo;s important to fix the issue this way instead of
+just running the app with sudo or doas in the terminal.</p>
+<p>Well, the thing is, polkit acts as a middleman between privileged and unprivileged processes.
+It allows unprivileged applications to access privileged operations in a secure
+manner. By using polkit instead of running everything with full root permissions,
+we mitigate potential security risks.</p>
+<p>Hope this explanation helps! Let me know if you have any more questions.</p>
+
+    </a>
+
+    </div>
+  </div>
 
     <div class="footer">
   

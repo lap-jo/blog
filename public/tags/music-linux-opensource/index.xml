@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music, linux, opensource on Lapjo</title>
+    <link>https://lapjo.com/tags/music-linux-opensource/</link>
+    <description>Recent content in music, linux, opensource on Lapjo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Aug 2023 20:00:20 +0300</lastBuildDate><atom:link href="https://lapjo.com/tags/music-linux-opensource/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>the ultimate ncmpcpp config, for the best cli-based music player</title>
+      <link>https://lapjo.com/posts/ncmpcpp/</link>
+      <pubDate>Sat, 05 Aug 2023 20:00:20 +0300</pubDate>
+      
+      <guid>https://lapjo.com/posts/ncmpcpp/</guid>
+      <description>Introduction ncmpcpp is a frontend for Music Player Daemon (MPD). MPD is a music player server that plays and organises audio files, playlists, etc. to interact (in a user friendly manner) with MPD we need a client application and ncmpcpp is one of these application. ncmpcpp is a fork of ncmpc that comes with many more features including but not limited to visualizer, tag editor, playlist editor, lyrics display and download.</description>
+    </item>
+    
+  </channel>
+</rss>

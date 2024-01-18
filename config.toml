@@ -67,7 +67,7 @@ copyright = "2024 lapjo. All rights reserved"
 languageCode = "en-us"
 
 [sitemap]
-  changeFreq = 'hourly'
+  changeFreq = 'daily'
   filename = 'sitemap.xml'
   priority = 1
 

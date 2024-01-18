@@ -3,6 +3,8 @@ title: "Change Lid Close Behaviour On Ubuntu and Fedora"
 date: 2023-12-07T09:18:09+03:00
 description: 'In this tutorial I show you how to disable or enable suspend on lid close on linux'
 image: images/laptop-nikita.webp
+tag: 'linux'
+tag: 'opensource'
 draft: false
 ---
 

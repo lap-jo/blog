@@ -5,7 +5,7 @@ sitemap:
 title: "the ultimate ncmpcpp config, for the best cli-based music player"
 date: 2023-08-05T20:00:20+03:00
 description: 'find out the use of ncmpcpp, how to configure ncmpcpp and wow your friends with this built in visualizer without cava'
-tags: "music"
+tags: "music, linux, opensource"
 image: images/ncmpcpp.webp
 draft: false
 ---
