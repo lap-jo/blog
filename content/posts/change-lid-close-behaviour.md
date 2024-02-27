@@ -8,6 +8,8 @@ tag: 'opensource'
 draft: false
 ---
 
+# Change suspend on lid close on linux
+
 ## Default behaviour
 On most linux distributions the default behaviour is that when you close you laptop
 lid the computer will suspended all processes inorder to save power. 

@@ -191,7 +191,3 @@ man ncmpcpp
 ```
 
 <a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /> </a> <br>
-
-<script defer src="https://cdn.commento.io/js/commento.js"></script>
-<div id="commento"></div>
-
