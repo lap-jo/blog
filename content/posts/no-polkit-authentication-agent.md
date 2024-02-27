@@ -79,7 +79,8 @@ you mitigate potential security risks.
 If you are new to i3 window manager or window managers in general
 
 Hope this explanation helps! Let me know if you have any more questions by
-messaging me on twitter through the link in the footer or by [emailing](lapjo@tutanota.com) me
+messaging me on twitter through the link in the footer or by ![emailing](lapjo@tutanota.com) me
 
 Also you can support the writing of these articles 
+
 <a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /> </a> <br>
