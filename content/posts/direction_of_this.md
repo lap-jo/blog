@@ -4,7 +4,7 @@ date: 2024-01-12T16:23:40+03:00
 description: 'random disorganized thoughts on a youtuber'
 # image: images/cctv.jpeg
 tag: 'random'
-draft: false
+draft: true
 ---
 
 I have been watching youtube videos from creator *luke smith* on youtube and have \

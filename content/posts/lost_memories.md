@@ -3,7 +3,7 @@ title: "Lost Memories"
 date: 2024-01-16T06:19:23+03:00
 description: 'a blub on memories you have but everyone seems to have lost'
 image: images/joey_diaz.webp
-draft: false
+draft: true
 ---
 
 2014, 14 year old me to my brother: remember we used to play space chimp on ps2?.

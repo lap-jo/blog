@@ -1,7 +1,7 @@
 ---
 title: "Fix i3 window manager error 'No Polkit Authentication Agent'"
 date: 2024-01-17T16:04:20+03:00
-description: 'in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager'
+description: 'No polkit authentication agent - in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager'
 image: 
 draft: false
 ---
