@@ -15,7 +15,7 @@ public_folder: "/images"
 # media_library: '' configures media library intergrations
 # name: '' 
 # config: ''
-# site_url: https://lapjo.com/admi
+site_url: https://lapjo.com/admin/#
 # show_preview_links: false
 # search: false
 slug:
