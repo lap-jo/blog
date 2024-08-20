@@ -1,5 +1,5 @@
 backend:
-  name: github-gateway
+  name: git-gateway
   branch: main
   repo: https:github.com/lap-jo/blog
   commit_messages:
@@ -30,8 +30,7 @@ collections:
     create: true
     description: >
       great place to set the tone init
-    folder: '/content/posts/'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     view_filters:
       - label: Posts With Index
@@ -59,11 +58,14 @@ collections:
           format: 'YYYY-MM-DD HH:mm',
           default: '{{ .Date }}',
         }
-      - { label: 'Description', name: 'description', widget: 'string', hint: 'this is the post description' }
-      - label: 'Cover Image'
-        name: 'image'
-        widget: 'image'
-        tagname: ''
+      - { label: 'Description', name: 'description', widget: 'string', default: 'this is the post description' }
+
+      - { 
+        label: 'Cover Image',
+        name: 'image',
+        widget: 'image',
+        tagname: '',
+        }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
