@@ -56,7 +56,7 @@ collections:
           name: 'date',
           widget: 'datetime',
           format: 'YYYY-MM-DD HH:mm',
-          default: '{{ .Date }}',
+          default: {{ .Date }},
         }
       - { label: 'Description', name: 'description', widget: 'string', default: 'this is the post description' }
 
