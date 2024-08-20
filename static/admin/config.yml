@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: lap-jo/blog
+  name: github-gateway
+  branch: main
+  repo: https:github.com/lap-jo/blog
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
@@ -25,12 +26,13 @@ collections:
   - name: 'posts'
     label: 'Posts'
     label_singular: 'Post'
+    folder: '/content/posts/'
+    create: true
     description: >
       great place to set the tone init
     folder: '/content/posts/'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
-    create: true
     view_filters:
       - label: Posts With Index
         field: title
@@ -49,19 +51,20 @@ collections:
         field: draft
     fields: # The fields each document in this collection have
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+
       - {
           label: 'Publish Date',
           name: 'date',
           widget: 'datetime',
           format: 'YYYY-MM-DD HH:mm',
-          default: '{{now}}',
+          default: '{{ .Date }}',
         }
+      - { label: 'Description', name: 'description', widget: 'string', hint: 'this is the post description' }
       - label: 'Cover Image'
         name: 'image'
         widget: 'image'
-        required: false
         tagname: ''
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
   - name: about
