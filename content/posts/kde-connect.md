@@ -5,3 +5,6 @@ description: 'As soon as Winston had dealt with each of the messages, he clipped
 image: images/cctv.jpeg
 draft: true
 ---
+
+Kde-connect your wireless companion for everything from transfering files to using
+your phone as a remote for your pc.

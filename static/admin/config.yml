@@ -1,0 +1,80 @@
+backend:
+  name: github
+  repo: lap-jo/blog
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+publish_mode: editorial_workflow
+media_folder: "static/images"
+public_folder: "/images"
+# media_library: '' configures media library intergrations
+# name: '' 
+# config: ''
+site_url: https://lapjo.com
+# show_preview_links: false
+# search: false
+slug:
+  encoding: unicode
+  sanitize_replacement: "_"
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    label_singular: 'Post'
+    description: >
+      great place to set the tone init
+    folder: '/content/posts/'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    create: true
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD HH:mm',
+          default: '{{now}}',
+        }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+  - name: about
+    label: 'About Page'
+    folder: '/content/pages'
+
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD HH:mm',
+          default: '{{now}}',
+        }

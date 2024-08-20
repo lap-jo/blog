@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
 
   
-    <meta name="description" content="In this tutorial I show you how to disable or enable suspend on lid close on linux"/>
+    <meta name="description" content="Change suspend on lid close linux - In this tutorial I show you how to disable or enable suspend on lid close on linux"/>
     <meta property="og:title" content="Change Lid Close Behaviour On Ubuntu and Fedora"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://lapjo.com/posts/change-lid-close-behaviour/"/>
     <meta property="og:image" content="https://lapjo.com/images/laptop-nikita.webp"/>
-    <meta property="og:description" content="In this tutorial I show you how to disable or enable suspend on lid close on linux"/>
+    <meta property="og:description" content="Change suspend on lid close linux - In this tutorial I show you how to disable or enable suspend on lid close on linux"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@okelloj3"/>
     <meta name="twitter:creator" content="@okelloj3"/>
@@ -117,7 +117,7 @@
   </div>
 </div>
     
-265 words 2 minutes
+280 words 2 minutes
   <div class="blog">
     
       <div class="author">
@@ -128,18 +128,19 @@
 </div>
     
     <div class="intro">
-        <p>265 words 2 minutes</p>
+        <p>280 words 2 minutes</p>
       <h1>Change Lid Close Behaviour On Ubuntu and Fedora</h1>
       
       <img alt="Article hero image" src="/images/laptop-nikita.webp" />
       
     </div>
     <div class="content">
-      <h2 id="default-behaviour">Default behaviour</h2>
+      <h1 id="change-suspend-on-lid-close-on-linux">Change suspend on lid close on linux</h1>
+<h2 id="default-behaviour">Default behaviour</h2>
 <p>On most linux distributions the default behaviour is that when you close you laptop
-lid the computer will suspended all processes inorder to save power.</p>
-<p>This is very useful as it reduces battery usage incase you unknowingly forgot to
-turn off your computer before a long trip or in any other situation.</p>
+lid the computer will suspend all processes in order to save power. This is very
+useful as it reduces battery usage incase you unknowingly forgot to turn off your
+computer before a long trip or in any other situation.</p>
 <h2 id="but">But</h2>
 <p>There are situations where you will want this behaviour changed so that you can
 tasks running with the lid closed.</p>
@@ -158,18 +159,16 @@ would require you to have your pc running.</p>
 <li>uncomment the line and change it to one of the below options depending on what you want
 <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HandleLidSwitch=ignore <span style="color:#007f7f">##this will do nothing on lid close</span>
 </span></span><span style="display:flex;"><span>HandleLidSwitch=lock <span style="color:#007f7f">## this will lock requiring you to input a password when you open the lid</span>
-</span></span><span style="display:flex;"><span>HandleLidSwithc=poweroff <span style="color:#007f7f">## do not know what kind of psycho would use this</span>
+</span></span><span style="display:flex;"><span>HandleLidSwitch=poweroff <span style="color:#007f7f">## do not know what kind of psycho would use this</span>
 </span></span></code></pre></div></li>
-<li>save your changes and restart systemd login service with the command</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart systemd-logind.service
-</span></span></code></pre></div><ul>
-<li>this will likely log you out of your system and display a selinux error.</li>
-<li>switch to one of your tty with <em>Ctrl-Alt-F3</em> for tty3</li>
-<li>restart gdm.service from the tty3</li>
-<li>switch to the default tty1 and you should be able to login normally</li>
-</ul>
-
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>- the next step will likely log you out of your system and display a selinux error.
+</span></span><span style="display:flex;"><span>- switch to one of your tty with *Ctrl-Alt-F3* for tty3
+</span></span><span style="display:flex;"><span>- restart gdm.service from the tty3
+</span></span><span style="display:flex;"><span>- switch to the default tty1 and you should be able to login normally
+</span></span><span style="display:flex;"><span>- save your changes and restart systemd login service with the command
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart systemd-logind.service
+</span></span></code></pre></div>
     </a>
 
     </div>

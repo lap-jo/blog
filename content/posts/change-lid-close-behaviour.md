@@ -12,10 +12,9 @@ draft: false
 
 ## Default behaviour
 On most linux distributions the default behaviour is that when you close you laptop
-lid the computer will suspended all processes inorder to save power. 
-
-This is very useful as it reduces battery usage incase you unknowingly forgot to
-turn off your computer before a long trip or in any other situation.
+lid the computer will suspend all processes in order to save power. This is very
+useful as it reduces battery usage incase you unknowingly forgot to turn off your
+computer before a long trip or in any other situation.
 
 ## But
 There are situations where you will want this behaviour changed so that you can
@@ -39,13 +38,16 @@ would require you to have your pc running.
     ```bash
     HandleLidSwitch=ignore ##this will do nothing on lid close
     HandleLidSwitch=lock ## this will lock requiring you to input a password when you open the lid
-    HandleLidSwithc=poweroff ## do not know what kind of psycho would use this
+    HandleLidSwitch=poweroff ## do not know what kind of psycho would use this
     ```
-- save your changes and restart systemd login service with the command
-```bash 
-sudo systemctl restart systemd-logind.service
-```
-- this will likely log you out of your system and display a selinux error.
+``` WARNING
+- the next step will likely log you out of your system and display a selinux error.
 - switch to one of your tty with *Ctrl-Alt-F3* for tty3
 - restart gdm.service from the tty3
 - switch to the default tty1 and you should be able to login normally
+- save your changes and restart systemd login service with the command
+```
+```bash 
+sudo systemctl restart systemd-logind.service
+```
+

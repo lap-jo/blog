@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="/assets/css/extended.min.9729f28a5087b689b946e103d96abd63bfd37b1417effa251dbf798312e3fba5.css">
 
   
-    <meta name="description" content="in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
+    <meta name="description" content="No polkit authentication agent - in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
     <meta property="og:title" content="Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://lapjo.com/posts/no-polkit-authentication-agent/"/>
     
-    <meta property="og:description" content="in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
+    <meta property="og:description" content="No polkit authentication agent - in this article I show you how to fix the no polkit authentication agent error on linux if you are using i3 window manager | the steps may help you with another window manager"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@okelloj3"/>
     <meta name="twitter:creator" content="@okelloj3"/>
@@ -117,7 +117,7 @@
   </div>
 </div>
     
-202 words 1 minutes
+552 words 3 minutes
   <div class="blog">
     
       <div class="author">
@@ -128,30 +128,66 @@
 </div>
     
     <div class="intro">
-        <p>202 words 1 minutes</p>
+        <p>552 words 3 minutes</p>
       <h1>Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;</h1>
       
     </div>
     <div class="content">
-      <p>So, I recently switched to i3wm and ran into a small issue with running virt-manager
+      <h2 id="a-little-introduction">A little introduction</h2>
+<p>So, I recently switched to i3wm and ran into a small issue with running virt-manager
 from the desktop entry. Turns out, I need root access for it to work. In my previous
-setup with Fedora GNOME, I would simply get a password prompt with gnome-polkit.</p>
-<p>But here&rsquo;s the thing: polkit-gnome only works with GNOME, so if you&rsquo;re using i3wm,
-you&rsquo;ll need a different polkit manager. The most popular one for i3wm is lxpolkit.</p>
-<p>To fix the issue, you can easily install lxpolkit from your Linux distribution&rsquo;s
-package manager which in my case is fedora. So I run</p>
+setup with Fedora GNOME, I would simply get a password prompt with polkit-gnome.
+Running it in the terminal without root gives me the <em>No Polkit Authentication</em>
+error after it fails.</p>
+<h2 id="why-do-i-get-the-no-polkit-authentication-agent-error">Why do I get the &ldquo;No Polkit Authentication Agent&rdquo; error?</h2>
+<p>First you need to know what polkit does. Polkit, to put it simply grants access
+to privileged operation for unprivileged applications by acting as a framework
+for centralizing the decision making process.</p>
+<p>It is more likely than not nowadays that you are running a linux distribution with
+a full on  default desktop environment, let&rsquo;s use gnome here to get you on board.
+Gnome being a desktop environment comes with a set of applications chosen
+specifically to give you the &ldquo;gnome experience&rdquo; and this includes it&rsquo;s own polkit
+authentication agent called polkit-gnome. And if you are reading this article it
+probably means you have switched from gnome (or some other desktop environment)
+to a window manager.</p>
+<p>Now window managers too come with a set of dependencies, but most window managers
+are built with minimalism in mind. This means less dependencies are downloaded
+allowing you the user are left to add whichever applications you need to perform
+certain functions.</p>
+<p>So it is likely that switching from gnome to i3 window manager will break certain
+application functions. Like in this particular situation i3wm did not automatically
+install a polkit authentication manager so you will need to install one yourself.</p>
+<p>One I have tried and can recommend is <strong>lxpolkit</strong> but you can choose whichever
+you want (this is why you switched to linux anyways).</p>
+<p>You can easily install lxpolkit from your Linux distribution&rsquo;s package manager
+which in my case is fedora. Run the below commands in your terminal emulator;</p>
+<p><em>Fedora</em></p>
 <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install lxpolkit
+</span></span></code></pre></div><p>*Ubuntu (or Debian and it&rsquo;s derivatives)</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install lxpolkit
 </span></span></code></pre></div><p>Once that&rsquo;s done, just add the following
 line to your i3config:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>exec --no-startup-id lxpolkit
-</span></span></code></pre></div><p>And voila! You&rsquo;re good to go.</p>
-<p>Now, you might wonder why it&rsquo;s important to fix the issue this way instead of
+</span></span></code></pre></div><p>Now restart your i3 configuration and get to enjoying the full power of virtual
+machines. Experiment, love and most importantly break as many virtual machines
+as you can because that is what they are made for after all.</p>
+<p><strong>NOTE:</strong>
+lxpolkit of course is not the only option and if it does not work well for you
+there are many other options which you can find by searching your linux distributions
+repositories or by reading the archwiki.</p>
+<h3 id="why-fix-the-issue-this-way-rather-than-just-running-as-root">Why fix the issue this way rather than just running as root?</h3>
+<p>You might wonder why it&rsquo;s important to fix the issue this way instead of
 just running the app with sudo or doas in the terminal.</p>
-<p>Well, the thing is, polkit acts as a middleman between privileged and unprivileged processes.
+<p>Thing is, polkit acts as a middleman between privileged and unprivileged processes.
 It allows unprivileged applications to access privileged operations in a secure
 manner. By using polkit instead of running everything with full root permissions,
-we mitigate potential security risks.</p>
-<p>Hope this explanation helps! Let me know if you have any more questions.</p>
+you mitigate potential security risks.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>If you are new to i3 window manager or window managers in general</p>
+<p>Hope this explanation helps! Let me know if you have any more questions by
+messaging me on twitter through the link in the footer or by <img src="lapjo@tutanota.com" alt="emailing"> me</p>
+<p>Also you can support the writing of these articles</p>
+<p><a href="https://www.buymeacoffee.com/lapjo"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=lapjo&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /> </a> <br></p>
 
     </a>
 
