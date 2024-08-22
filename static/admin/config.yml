@@ -20,7 +20,7 @@ site_url: https://lapjo.com/admin/#
 # search: false
 slug:
   encoding: unicode
-  sanitize_replacement: "_"
+  sanitize_replacement: "-"
 
 collections:
   - name: 'posts'
@@ -55,8 +55,8 @@ collections:
           label: 'Publish Date',
           name: 'date',
           widget: 'datetime',
-          format: 'YYYY-MM-DD HH:mm',
-          default: {{ .Date }},
+          format: "dayjs().format('[YYYYescape] YYYY-MM-DDTHH:mm:ssZ')",
+          default: {{now}},
         }
       - { label: 'Description', name: 'description', widget: 'string', default: 'this is the post description' }
 
