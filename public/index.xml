@@ -6,8 +6,15 @@
     <description>Recent content in Tech and opensource for you. on Lapjo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jan 2024 16:04:20 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2024 01:36:25 +0300</lastBuildDate>
     <atom:link href="https://lapjo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fucked up my mental</title>
+      <link>https://lapjo.com/posts/stuck/</link>
+      <pubDate>Wed, 18 Sep 2024 01:36:25 +0300</pubDate>
+      <guid>https://lapjo.com/posts/stuck/</guid>
+      <description>Life can sometimes deal us an unfavorable hand, and it&amp;rsquo;s during these times that we must choose to confront our circumstances head-on or risk falling into a cycle of regret. I&amp;rsquo;ve recently faced a period of stagnation, which led to feelings of uncertainty and inaction. However, I&amp;rsquo;ve come to realize that taking a step back to reevaluate and strategize is essential for personal growth.&#xA;In my journey, I&amp;rsquo;ve neglected responsibilities, such as not completing two certificate exams I&amp;rsquo;ve paid for and neglecting my businesses and family time.</description>
+    </item>
     <item>
       <title>Fix i3 window manager error &#39;No Polkit Authentication Agent&#39;</title>
       <link>https://lapjo.com/posts/no-polkit-authentication-agent/</link>

@@ -9,7 +9,7 @@ backend:
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
-publish_mode: editorial_workflow
+publish_mode: simple
 media_folder: "static/images"
 public_folder: "/images"
 # media_library: '' configures media library intergrations
